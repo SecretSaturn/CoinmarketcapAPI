@@ -1,0 +1,58 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/20.8.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add BigNumber
+
+PATH: 
+  /Users/alexanderhertlein/opt/anaconda3/bin:/Users/alexanderhertlein/.pyenv/shims:/usr/local/opt/m4/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/TeX/texbin:/Users/alexanderhertlein/opt/anaconda3/bin:/usr/local/opt/m4/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/alexanderhertlein/.cargo/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.8.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/BigNumber: Not found
+      at params.callback [as _callback] (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66145:18)
+      at self.callback (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:140890:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:141862:10)
+      at Request.emit (node:events:514:28)
+      at IncomingMessage.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:628:28)
+      at IncomingMessage.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1408:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "simple-node-ts-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "ts-node server.ts",
+      "build": "tsc",
+      "serve": "node dist/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@axelar-network/axelarjs-sdk": "^0.13.6",
+      "@types/express": "^4.17.20",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "secretjs": "^1.11.1",
+      "ts-node": "^10.9.1",
+      "typescript": "^5.2.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
